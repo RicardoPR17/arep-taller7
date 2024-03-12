@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Form</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -13,12 +13,12 @@
       <input type="text" id="user" name="user" placeholder="username" />
       <br />
       <label for="pass">Password:</label>
-      <input type="password" id="pass" name="pass" placeholder="psasword" />
+      <input type="password" id="pass" name="pass" placeholder="password" />
       <br />
-      <input type="button" value="Submit" onclick="login()" />
+      <input type="button" value="Login" onclick="login(user, pass)" />
     </form>
     <div id="logmsg"></div>
 
-    <script src="login.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

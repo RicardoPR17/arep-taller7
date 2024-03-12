@@ -12,7 +12,12 @@ public class HelloService {
         port(getPort());
         staticFiles.location("/public");
         get("/hello", (req, res) -> "Hello World");
-        post("/login", (req, res) -> "");
+        post("/login", (req, res) -> {
+            String username = req.queryParams("user");
+            String password = req.queryParams("pass");
+
+            return SecureUrlReader.secureReadUrl(username, password);
+        });
     }
 
     private static int getPort() {
@@ -21,6 +26,4 @@ public class HelloService {
         }
         return 5000;
     }
-
-    
 }
