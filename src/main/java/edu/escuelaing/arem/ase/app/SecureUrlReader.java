@@ -84,7 +84,6 @@ public class SecureUrlReader {
                 response.append(inputLine);
             }
         } catch (IOException x) {
-            System.out.println("aiuda");
             response.append(x);
         }
         return response.toString();
