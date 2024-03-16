@@ -37,7 +37,7 @@ public class UserDB {
      * Give the port for the server
      * 
      * @return If the PORT enviroment variable is define, return his value.
-     *         Otherwise, 5000
+     *         Otherwise, 5005
      */
     private static int getPort() {
         if (System.getenv("PORT") != null) {
