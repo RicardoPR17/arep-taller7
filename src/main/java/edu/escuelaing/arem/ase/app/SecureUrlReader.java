@@ -45,8 +45,7 @@ public class SecureUrlReader {
             SSLContext.setDefault(sslContext);
 
             // We can now read this URL
-            secureResponse = readURL("https://ec2-54-91-113-166.compute-1.amazonaws.com:5005/login?user=" + username
-                    + "&pass=" + password);
+            secureResponse = readURL("https://localhost:5005/login?user=" + username + "&pass=" + password);
 
             // // This one can't be read because the Java default truststore has been
             // // changed.
